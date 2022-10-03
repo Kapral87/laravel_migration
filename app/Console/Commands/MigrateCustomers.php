@@ -178,7 +178,7 @@ class MigrateCustomers extends Command
      *
      * @return array $name_to_iso3 Countries array
      */
-    private function getCountries()
+    private function getCountries() : array
     {
         $codes = json_decode(file_get_contents('http://country.io/iso3.json'), true);
         $names = json_decode(file_get_contents('http://country.io/names.json'), true);
