@@ -138,6 +138,8 @@ class MigrateCustomers extends Command
      *
      * @param  array $customer Prepared customer data
      *
+     * @throws Exception on empty email
+     *
      * @return void
      */
     private function saveCustomer(array $customer) : void
