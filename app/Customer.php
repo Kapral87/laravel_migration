@@ -37,6 +37,8 @@ class Customer extends Model
      *
      * @param  string  $value
      *
+     * @throws Exception on invalid email
+     *
      * @return void
      */
     public function setEmailAttribute(string $value) : void
@@ -51,6 +53,8 @@ class Customer extends Model
      * Set the customers's age.
      *
      * @param  int  $value
+     *
+     * @throws Exception on invalid age
      *
      * @return void
      */
